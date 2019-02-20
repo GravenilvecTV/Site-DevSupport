@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'calibri'; /*a name to be used later*/
+    src: url('/style/calibri.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'space'; /*a name to be used later*/
+    src: url('/style/space.ttf'); /*URL to font*/
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,700);
+
+
+body {
+  background: white fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: Montserrat, sans-serif;
+}
+
+.page {
+  position: relative;
+  width: auto;
+  left: 5%;
+  width: 90%;
+  top: 80px;
+}
+
+.content {
+  position: absolute;
+	margin-top: 150px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: Montserrat;
+  font-weight: 100;
+  line-height: 1.5rem;
+  width: 100%;
+}
+
+.author {
+  text-align: center;
+  font-size: 24px;
+  border: solid 1.5px black;
+  border-radius: 7px;
+  width: 20%;
+  left: 40%;
+  font-weight: 10;
+}
+
+.page .top {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-family: Montserrat;
+  font-size: 0.75em;
+  font-weight: 100;
+  line-height: 1rem;
+  left: 0%;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+}

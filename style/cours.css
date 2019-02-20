@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'calibri'; /*a name to be used later*/
+    src: url('/style/calibri.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'space'; /*a name to be used later*/
+    src: url('/style/space.ttf'); /*URL to font*/
+}
+body {
+  background: white fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: 'Inter UI', sans-serif;
+}
+
+#filterDiv {
+	position: absolute;
+	display: none;
+	z-index: 1;
+	background: rgb(0,120,220);
+	opacity: 0.0;
+	width: 400px;
+	height: 250px;
+	top: -500px;
+	left: 42%;
+	text-align: center;
+	box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.4), 0 5px 5px 0 rgba(0, 0, 0, 0.48);
+  	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.fading3 {
+	animation:opac 3s}@keyframes opac{from{opacity:0} to{opacity:1}
+}
+.fading4 {
+	animation:opac 4s}@keyframes opac{from{opacity:0} to{opacity:1}
+}
+.fading5 {
+	animation:opac 5s}@keyframes opac{from{opacity:0} to{opacity:1}
+}
+
+.fading-btn {
+	transition: all 0.5s;
+}
+.fading-btn:hover {
+	transition: all 0.5s;
+}
+
+.between {
+	position: absolute;
+	width: calc(76% - 2px);
+	float: left;
+	border-right: 1px solid gray;
+	left: 12%;
+}
+
+.l0{
+	position: absolute;
+	margin-top: 260px;
+}
+
+.l1{
+	position: absolute;
+	margin-top: 190px;
+}
+
+.l2{
+	position: absolute;
+	margin-top: 120px;
+}
+
+.l3{
+	position: absolute;
+	margin-top: 50px;
+}
+
+.l4{
+	position: absolute;
+	margin-top: -20px;
+}
+
+.l5{
+	position: absolute;
+	margin-top: -90px;
+}
+
+.l6{
+	position: absolute;
+	margin-top: -160px;
+}
+
+.l7{
+	position: absolute;
+	margin-top: -230px;
+}
+
+.l8{
+	position: absolute;
+	margin-top: -300px;
+}
+
+.l9{
+	position: absolute;
+	margin-top: -370px;
+}
+
+.cours {
+	position: absolute;
+	width: 76%;
+	left: 12%;
+	height: 180px;
+	cursor: hand;
+}
+
+.c0 {
+	position: absolute;
+	margin-top: 80px;
+}
+
+.c1 {
+	position: absolute;
+	margin-top: 10px;
+}
+
+.c2 {
+	position: absolute;
+	margin-top: -60px;
+}
+
+.c3 {
+	position: absolute;
+	margin-top: -130px;
+}
+
+.c4 {
+	position: absolute;
+	margin-top: -200px;
+}
+
+.c5 {
+	position: absolute;
+	margin-top: -270px;
+}
+
+.c6 {
+	position: absolute;
+	margin-top: -340px;
+}
+
+.c7 {
+	position: absolute;
+	margin-top: -410px;
+}
+
+.c8 {
+	position: absolute;
+	margin-top: -480px;
+}
+
+.c9 {
+	position: absolute;
+	margin-top: -550px;
+}
+
+.cours a {
+	position: absolute;
+	display:block;
+	width:76%;
+	height:100%;
+	margin: 3px 5px;
+	color: rgb(212, 108, 96);
+	text-decoration: none;
+    font-size: 2rem;
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 1.75rem;
+	margin-top: 15px;
+	margin-left: 280px;
+}
+
+.filter {
+	position: absolute;
+    cursor: hand;
+	top: 110px;
+	left: 12%;
+	font-family: 'calibri';
+    border: 2px solid rgb(212, 108, 96);
+    border-radius: 5px;
+    height: 25px;
+    color: rgb(212, 108, 96);
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 5px 20px;
+    font-size: 18px;
+    transition: all 0.7s;
+}
+
+.filterbtn {
+	position: absolute;
+    cursor: hand;
+    margin-left: -50px;
+	font-family: 'calibri';
+    border: 2px solid rgb(212, 108, 96);
+    border-radius: 5px;
+    height: 25px;
+    color: rgb(212, 108, 96);
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px 20px;
+    font-size: 18px;
+    transition: all 0.7s;
+}
+.filterbtn:hover {
+    cursor: hand;
+    color: white;
+    background-color: rgb(212, 108, 96);
+}
+
+.filter:hover {
+    cursor: hand;
+    color: white;
+    background-color: rgb(212, 108, 96);
+}
+
+.cours p {
+	margin-top: 60px;
+	margin-left: 280px;
+	color: black;
+    font-size: 1rem;
+    font-family: Montserrat;
+    font-weight: 100;
+    line-height: 0.5rem;
+}
+
+.cours img {
+	position: absolute;
+	margin-top: 15px;
+}
+
+.cours span {
+	position: relative;
+	color: rgb(212, 108, 96);
+	font-family: 'calibri';
+	border: 2px solid rgb(212, 108, 96);
+	border-radius: 3px;
+	box-shadow: 0 0 1px #003668;
+	float: right;
+	top: calc(0px);
+}
+
+.cours:hover {
+	background-color: rgba(60, 60, 60, 0.1);
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.bottom {
+	position: fixed;
+	bottom: 3;
+	width: 10%;
+	left: 45%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.page {
+    font-family: 'calibri';
+    border: 2px solid rgb(212, 108, 96);
+    background-color: rgb(212, 108, 96);
+    border-radius: 5px;
+    width: 20px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    transition: all 0.7s;
+    cursor: hand;
+	text-decoration: none;
+}
+
+.page:hover {
+	color: rgb(212, 108, 96);
+    background-color: rgb(255, 255, 255);
+}
+
+.actual {
+	color: rgb(200, 96, 84);
+    background-color: rgb(255, 255, 255);
+	text-decoration: underline;
+}
