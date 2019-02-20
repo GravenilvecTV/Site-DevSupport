@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'calibri'; /*a name to be used later*/
+    src: url('/style/calibri.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'space'; /*a name to be used later*/
+    src: url('/style/space.ttf'); /*URL to font*/
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,700);
+
+html,body{
+    margin:0;
+    padding:0;
+}
+
+/*body {
+  background: white fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}*/
+
+body{/*min-width:320px;*/font-family:"Montserrat",sans-serif;font-weight:400;font-size:1rem}
+
+.page {
+  /*width: auto;*/
+  width: 100vw;
+  left: 0;
+  top: 80px;
+}
+
+.contact span.contactButton {
+    position: absolute;
+    left: calc(50vw - 75px);
+    width: 150px;
+    font-family: 'calibri';
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 25px;
+    color: white;
+    text-align: center;
+    bottom: 26px;
+    padding: 5px 20px;
+    font-size: 18px;
+    transition: all 0.7s;
+    cursor: hand;
+}
+
+.contact span.contactButton:hover {
+    color: #003668;
+    background-color: white;
+    border: 2px solid #003668;
+    text-decoration: underline;
+}
+
+.contact {
+  position: absolute;
+  top: 55vh;
+  left: 0px;
+  width: 100vw;
+  height: 150px;
+  background-color: #003668;
+  transition: all 1s;
+}
+
+.contact .contactT {
+  position: absolute;
+  left: calc(41vw + 2px);
+  color: white;
+  font-size: 27px;
+  font-family: 'calibri';
+  font-weight: 600;
+}
+
+.contact h4.email {
+  position: absolute;
+  text-decoration: none;
+  left: calc(41vw + 2px);
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  bottom: 2px;
+  font-family: 'calibri';
+  font-weight: 300;
+  transition: all 1s;
+}
+
+
+.contact a.email {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'calibri';
+  font-weight: 300;
+  transition: all 1s;
+}
+
+.cgu {
+  position: absolute;
+  margin-top: 200px;
+  left: 0px;
+  width: 100vw;
+  height: 200px;
+  background-color: white;
+  transition: all 1s;
+}
+
+.cgu .apropos {
+  position: absolute;
+  color: black;
+  margin-top: 20px;
+  left: 42vw;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Montserrat;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.cgu .title span {
+  position: absolute;
+  left: 42vw;
+  margin-top: 77px;
+  text-align: center;
+}
+
+.cgu .title a {
+    color: rgba(0, 0, 0, .92);
+    font-family: Montserrat;
+    text-decoration: none;
+}
+
+.cgu .title span {
+    color: rgba(0, 0, 0, .92);
+    font-size: 1rem;
+    font-family: Montserrat;
+    font-weight: 100;
+    line-height: 1.75rem;
+}
+
+.cgu .title span:hover {
+  color: rgb(100, 100, 100);
+}
+
+.top1 {
+	position: absolute;
+  top: 80px;
+  left: 0px;
+  width: 100vw;
+	height: 50vh;
+	background-color: rgb(212,108,96);
+}
+
+.switch {
+  position: relative;
+  margin-top: 12px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  z-index: 1;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: 1;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #003668;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #003668;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50vw;
+}
+
