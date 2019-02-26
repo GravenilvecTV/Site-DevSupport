@@ -1,0 +1,15 @@
+
+# Ignore le fichier google-site-verification
+*.html
+
+# N'ignore pas le index.html
+!index.html
+
+# Ignore le contenu 
+cours/
+!cours/index.php
+!cours/exempleIndex.php
+
+# Ignore les mots de passe
+login/users.txt
+login/users_.txt
