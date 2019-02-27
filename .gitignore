@@ -1,9 +1,7 @@
 
 # Ignore le fichier google-site-verification
 *.html
-
-# N'ignore pas le index.html
-!index.html
+!includes/analyse.html
 
 # Ignore le contenu 
 cours/
