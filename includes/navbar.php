@@ -4,6 +4,7 @@ if(isset($_SESSION['username'])){
 	$username = $_SESSION['username'];
 	if($username != "root"){
 		$username = ucwords($username);
+		break;
 	}
 }
 ?>
